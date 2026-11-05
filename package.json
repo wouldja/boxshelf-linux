@@ -9,6 +9,8 @@
   "scripts": {
     "start": "electron .",
     "windowed": "electron . --windowed",
+    "linux": "bash start-boxshelf.sh",
+    "linux:window": "bash start-boxshelf.sh --windowed",
     "dist": "electron-builder --win portable"
   },
   "devDependencies": {
@@ -44,5 +46,8 @@
       "onlyLoadAppFromAsar": true,
       "enableCookieEncryption": true
     }
+  },
+  "allowScripts": {
+    "electron@39.8.10": true
   }
 }

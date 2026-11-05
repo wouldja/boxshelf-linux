@@ -24,6 +24,7 @@
 !/LICENSE
 !/THIRD-PARTY-NOTICES.md
 !/*.bat
+!/start-boxshelf.sh
 
 # 3. Never commit these, even inside allowed folders
 node_modules/

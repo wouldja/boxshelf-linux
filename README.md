@@ -19,6 +19,17 @@ for everything.
 Use **Start Boxshelf (window).bat** to run it in a window instead of fullscreen. `npm run dist` builds a
 portable `Boxshelf.exe` in `dist\` if you'd rather not keep Node around; keep the exe in this folder.
 
+## Linux
+
+On Linux, including Omarchy:
+
+1. Install Node.js and `unzip`.
+2. Run `./start-boxshelf.sh` for fullscreen, or `./start-boxshelf.sh --windowed` for a window.
+
+The first run installs Electron. If Node exits before Electron's archive is fully unpacked, the script finishes that with `unzip`. The setup wizard then opens. Automatic search looks for Windows emulator programs (`.exe`). Point each console at the Linux program in Settings if you have one. Sleep, shut down, start-with-Windows, and the in-game controller helper are Windows-only.
+
+This copy is based on [sassiestrhihno/boxshelf-source](https://github.com/sassiestrhihno/boxshelf-source). It is not an official Boxshelf release.
+
 ## Folder layout (portable)
 
 ```
